@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer List</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .add-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Customer List</h1>
+
+<div class="action-buttons">
+    <button class="add-button" onclick="addCustomer()">Add New Customer</button>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Street</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Replace the following with your actual customer data -->
+    <tr>
+        <td>Jane</td>
+        <td>Doe</td>
+        <td>Elvnu Street</td>
+        <td>H no 2</td>
+        <td>Delhi</td>
+        <td>Delhi</td>
+        <td>sam@gmail.com</td>
+        <td>12345678</td>
+        <td>
+            <button onclick="editCustomer()">Edit</button>
+            <button onclick="removeCustomer()">Remove</button>
+        </td>
+    </tr>
+    <!-- Add more rows as needed -->
+    </tbody>
+</table>
+
+<script>
+        function addCustomer() {
+            // Implement the logic to navigate to the add customer page or show a modal
+            alert("Add new customer functionality to be implemented.");
+        }
+
+        function editCustomer() {
+            // Implement the logic to edit the selected customer
+            alert("Edit customer functionality to be implemented.");
+        }
+
+        function removeCustomer() {
+            // Implement the logic to remove the selected customer
+            alert("Remove customer functionality to be implemented.");
+        }
+    </script>
+</body>
+</html>
